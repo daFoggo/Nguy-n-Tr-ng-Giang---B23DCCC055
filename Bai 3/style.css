@@ -1,0 +1,152 @@
+/** Black */
+@font-face {
+    font-family: "SF Display";
+    font-weight: 900;
+    src: url("https://sf.abarba.me/SF-UI-Display-Black.otf");
+  }
+  
+  /** Bold */
+  @font-face {
+    font-family: "SF Display";
+    font-weight: 700;
+    src: url("https://sf.abarba.me/SF-UI-Display-Bold.otf");
+  }
+  
+  /** Heavy */
+  @font-face {
+    font-family: "SF Display";
+    font-weight: 800;
+    src: url("https://sf.abarba.me/SF-UI-Display-Heavy.otf");
+  }
+  
+  /** Light */
+  @font-face {
+    font-family: "SF Display";
+    font-weight: 200;
+    src: url("https://sf.abarba.me/SF-UI-Display-Light.otf");
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #faf9f8;
+}
+
+header{
+    font-family: "SF Display", sans-serif;
+    padding: 10px 20px 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.welcomePage {
+    font-family: "SF Display", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+#secondText {
+    color: transparent;
+    -webkit-text-stroke: #282626 2px;
+    position: relative;
+    z-index: 2; 
+}
+
+.texts {
+    position: relative;
+    z-index: 1;
+}
+
+.imageBehind {
+    background-image: url(/assets/background.jpg);
+    position: absolute;
+    background-size: cover;
+    z-index: 1;
+    width: 40%;
+    height: 50%;
+    z-index: 0;
+    border-radius: 0.5rem;
+}
+
+.shortIntroduce{
+    height: 100vh;
+    text-align: left;
+    font-family: "SF Display", sans-serif;
+    font-weight: 700;
+    font-size: 6rem;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
+.aboutMe{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title{
+    font-family: "SF Display", sans-serif;
+    font-weight: 700;
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.image img{
+    border-radius: 0.5rem;
+}
+
+.info {
+    font-family: "SF Display", sans-serif;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 40px;
+    width: 100vw;
+}
+
+.infoBrief{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-family: "SF Display", sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    width: 50%;
+}
+
+.contact {
+    height: 100vh;
+    font-family: "SF Display", sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.links ul li {
+    padding: 0 0 10px 40px;
+}
+.links li{
+    gap: 20px;
+    text-align: left;
+    width: 100vw;
+}
+
+.links li a {
+    color:#282626;
+}
